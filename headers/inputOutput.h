@@ -2,8 +2,10 @@
 #pragma once
 #include <string>
 
+using namespace std;
+
 class InputOutput {
-public:
+    public:
     typedef struct Arguments {
         //H5File file;
         bool multiThreading;

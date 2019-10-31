@@ -1,14 +1,13 @@
 #include <iostream>
-#include "inputOutput.hpp"
+#include "inputOutput.h"
 
 using namespace std;
 int main (int argc, char *argv[])
 {
-  InputOutput::Arguments args = InputOutput.ProcessArguments(argc, argv);
+  InputOutput::Arguments args = InputOutput::ProcessArguments(argc, argv);
   Runner executor = new runner();
-  if(!args.IsOK){
-    cout<<"Argumentos erroneos"<<endl;
-    cout<<"El formato correcto es: f5grado filePath compressionLevel multiThreading"<<endl;
+  if(!args.isOK){
+    cout<< args.errorMessage << endl;
     return 0;
   }
   Runner::Results res =  runner.processFile(args.File,args.compressionLevel);

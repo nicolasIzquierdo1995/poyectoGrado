@@ -1,4 +1,4 @@
-#include <inputOutput.hpp>
+#include <inputOutput.h>
 
 
 InputOutput::Arguments InputOutput::ProcessArguments(int argc, char *argv[]){
@@ -19,7 +19,7 @@ InputOutput::Arguments CreateErrorArgument(){
     InputOutput::Arguments * parg;
     parg = &arg;
     parg->isOk = false;
-    parg->errorMesage = "Error en argumentos";
+    parg->errorMessage = "Error en argumentos";
     return arg;
 }
 
