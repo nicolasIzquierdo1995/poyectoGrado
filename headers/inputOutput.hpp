@@ -1,11 +1,16 @@
 // Header file:
-class InputOutput {
-    typedef struct Arguments {
-       //H5File file;
-       bool multiThreading;
-       int compressionLevel;
-    } Arguments;
+#pragma once
+#include <string>
 
+class InputOutput {
 public:
-    Arguments ProcessArguments();
+    typedef struct Arguments {
+        //H5File file;
+        bool multiThreading;
+        int compressionLevel;
+        bool isOk;
+        string errorMessage;
+    } Arguments;
+    static Arguments ProcessArguments(int argc, char *argv[]);
 };
+    
