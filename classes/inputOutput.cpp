@@ -1,18 +1,11 @@
-#include <inputOutput.h>
+#include "../headers/inputOutput.h"
 
-
-InputOutput::Arguments InputOutput::ProcessArguments(int argc, char *argv[]){
-    if (!VerifyArguments(argc,argv)){
-        return CreateErrorArgument();
-    }
-
-    
-
-}
+using namespace inputOutput;
 
 bool VerifyArguments(int argc, char *argv[]){
     return true;
 }
+
 
 InputOutput::Arguments CreateErrorArgument(){
     InputOutput::Arguments arg;
@@ -23,4 +16,9 @@ InputOutput::Arguments CreateErrorArgument(){
     return arg;
 }
 
-
+InputOutput::Arguments ProcessArguments(int argc, char *argv[]){
+    if (!VerifyArguments(argc,argv)){
+        return CreateErrorArgument();
+    }
+    return CreateErrorArgument();
+}
