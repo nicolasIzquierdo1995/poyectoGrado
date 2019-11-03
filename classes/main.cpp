@@ -2,7 +2,7 @@
 #include "../headers/inputOutput.h"
 
 using namespace std;
-using namespace inputOutput;
+
 int main (int argc, char *argv[])
 {
   //InputOutput::Arguments args = InputOutput::ProcessArguments(argc, argv);

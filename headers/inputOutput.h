@@ -3,9 +3,7 @@
 #include <string>
 
 using namespace std;
-namespace inputOutput
-{
-  class InputOutput {
+class InputOutput {
       public:
       typedef struct Arguments {
           //H5File file;
@@ -16,4 +14,3 @@ namespace inputOutput
       } Arguments;
       static Arguments ProcessArguments(int argc, char *argv[]);
   };
-}
