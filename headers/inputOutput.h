@@ -14,4 +14,3 @@ namespace inputOutput{
   class InputOutput {
     static Arguments ProcessArguments(int argc, char *argv[]);
   };
-}
