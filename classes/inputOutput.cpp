@@ -29,7 +29,7 @@ Arguments CreateErrorArgument(){
     return arg;
 }
 
-Arguments ProcessArguments(int argc, char *argv[]){
+inputOutput::ProcessArguments(int argc, char *argv[]){
     if (!VerifyArguments(argc,argv)){
         return CreateErrorArgument();
     }

@@ -6,7 +6,8 @@ using namespace std;
 
 int main (int argc, char *argv[])
 {
-  Arguments args = InputOutput.ProcessArguments(argc, argv);
+  InputOutput io;
+  Arguments args = io.ProcessArguments(argc, argv);
   //Runner executor = new runner();
   //if(!args.isOk){
   //  cout<< args.errorMessage << endl;
