@@ -1,11 +1,12 @@
-#include <iostream>
 #include "../headers/inputOutput.h"
+#include <iostream>
 
-using namespace std;
 using namespace inputOutput;
+using namespace std;
+
 int main (int argc, char *argv[])
 {
-  //InputOutput::Arguments args = InputOutput::ProcessArguments(argc, argv);
+  Arguments args = InputOutput.ProcessArguments(argc, argv);
   //Runner executor = new runner();
   //if(!args.isOk){
   //  cout<< args.errorMessage << endl;

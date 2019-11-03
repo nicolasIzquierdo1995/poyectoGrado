@@ -7,7 +7,7 @@ bool VerifyArguments(int argc, char *argv[]){
 }
 
 
-InputOutput::Arguments CreateErrorArgument(){
+Arguments CreateErrorArgument(){
     InputOutput::Arguments arg;
     InputOutput::Arguments * parg;
     parg = &arg;
@@ -16,7 +16,7 @@ InputOutput::Arguments CreateErrorArgument(){
     return arg;
 }
 
-InputOutput::Arguments ProcessArguments(int argc, char *argv[]){
+Arguments ProcessArguments(int argc, char *argv[]){
     if (!VerifyArguments(argc,argv)){
         return CreateErrorArgument();
     }
