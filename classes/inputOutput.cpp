@@ -1,5 +1,6 @@
 #include "../headers/inputOutput.h"
 
+using namespace inputOutput;
 bool VerifyArguments(int argc, char *argv[]){
     if (argc != 2){
       return false;
@@ -20,8 +21,8 @@ bool VerifyArguments(int argc, char *argv[]){
 
 
 Arguments CreateErrorArgument(){
-    InputOutput::Arguments arg;
-    InputOutput::Arguments * parg;
+    Arguments arg;
+    Arguments * parg;
     parg = &arg;
     parg->isOk = false;
     parg->errorMessage = "Error en argumentos";
@@ -33,8 +34,8 @@ Arguments ProcessArguments(int argc, char *argv[]){
         return CreateErrorArgument();
     }
 
-    InputOutput::Arguments arg;
-    InputOutput::Arguments * parg;
+    Arguments arg;
+    Arguments * parg;
     parg = &arg;
     parg->multiThreading = argv[1] == "true";
     parg->errorMessage = (int)argv[2];
